@@ -1,9 +1,7 @@
+import React from 'react';
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import quotes from "./assets/quotes.json";
-import React from 'react';
 import {FaTwitter, FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 import "./App.css";
 
@@ -39,10 +37,10 @@ const changeQuote = () => {
     <div id="quote-box">
       <div className="quote-content" style={{color: randomColor, transition}}>
         <h2 id="text">
-        <FaQuoteLeft size='30' style={{marginRight: "10px"}}/>
+          <FaQuoteLeft size="30" style={{marginRight: "10px"}}/>
           {quote.quote}
-        <FaQuoteRight size="30" style={{marginLeft: "10px"}}/>  
-          </h2>
+          <FaQuoteRight size="30" style={{marginLeft: "10px"}}/>  
+        </h2>
         <h4 id="author">
           {quote.author}
         </h4>
